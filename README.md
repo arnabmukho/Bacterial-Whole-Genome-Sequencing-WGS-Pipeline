@@ -1,4 +1,4 @@
-# 🦠 Bacterial Whole Genome Sequencing (WGS) Pipeline
+# 🦠 Bacterial Whole Genome Sequencing Pipeline
 
 A robust, fully containerized, high-throughput bacterial whole-genome sequencing (WGS) pipeline for assembly, annotation, taxonomic profiling, antimicrobial resistance characterization, and genome visualization from paired-end sequencing data.
 
