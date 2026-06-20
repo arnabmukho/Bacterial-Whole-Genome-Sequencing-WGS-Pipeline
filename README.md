@@ -1,8 +1,8 @@
 # 🦠 Bacterial Whole Genome Sequencing (WGS) Pipeline
 
-A robust, fully containerized, high-throughput bacterial whole-genome sequencing (WGS) pipeline for assembly, annotation, taxonomic profiling, antimicrobial resistance characterization, secretion system detection, biosynthetic gene cluster analysis, and genome visualization from Illumina paired-end sequencing data.
+A robust, fully containerized, high-throughput bacterial whole-genome sequencing (WGS) pipeline for assembly, annotation, taxonomic profiling, antimicrobial resistance characterization, and genome visualization from paired-end sequencing data.
 
-Designed for reproducible microbial genomics research, genomic surveillance programs, and large-scale bacterial sequencing projects including public health and INSACOG-style deployments.
+Designed for reproducible microbial genomics research, genomic surveillance programs, and large-scale bacterial sequencing.
 
 ---
 
@@ -454,32 +454,3 @@ Recommended for production deployment using Singularity/Apptainer.
 # 📖 Citation
 
 If you use this pipeline in your research, please cite the individual software packages used within the workflow as well as this repository.
-
----
-
-# 👨‍🔬 Author
-
-**Arnab Mukherjee**
-
-National Institute of Biomedical Genomics (NIBMG), India
-
----
-
-# ⭐ Acknowledgements
-
-This pipeline integrates outstanding open-source tools developed by the global bioinformatics community, including:
-
-* SPAdes
-* FastQC
-* fastp
-* Prokka
-* Kraken2
-* CheckM
-* MLST
-* Abricate
-* MacSyFinder
-* antiSMASH
-* CGView
-* MultiQC
-
-We gratefully acknowledge their contributions to reproducible microbial genomics research.
