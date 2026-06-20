@@ -119,7 +119,70 @@ export ANTISMASH_DB=/path/to/antismash
 
 ---
 
-## 5. Run Pipeline
+📥 Database Setup (One-Time Installation)
+
+The Docker image contains all required software for downloading and configuring databases. No local installation of Kraken2, CheckM, antiSMASH, Abricate, MLST, or associated dependencies is required.
+
+Create a database directory:
+
+mkdir -p db/{kraken2,checkm,antismash}
+
+Expected directory structure:
+
+db/
+├── kraken2/
+├── checkm/
+└── antismash/
+Automated Database Installation (Recommended)
+
+A helper script is included in this repository:
+
+setup_databases.sh
+
+The script automatically:
+
+Downloads and configures the CheckM database
+Downloads antiSMASH databases
+Builds the Kraken2 Standard database
+Updates Abricate databases
+Updates MLST schemes
+Fixes file ownership permissions
+
+Run:
+
+chmod +x setup_databases.sh
+
+./setup_databases.sh
+Expected Storage Requirements
+Database	Approximate Size
+Kraken2 Standard	100–150 GB
+antiSMASH	25–35 GB
+CheckM	~1.4 GB
+Abricate Databases	<5 GB
+MLST Schemes	<1 GB
+Total Recommended	150–250 GB
+
+For production deployments and large-scale bacterial surveillance projects, allocating at least 250 GB of storage for databases is recommended.
+
+Verify Database Installation
+
+After successful installation:
+
+db/
+├── kraken2/
+├── checkm/
+└── antismash/
+
+The pipeline automatically uses:
+
+/databases/kraken2
+/databases/checkm
+/databases/antismash
+
+No modification of bacterial_wgs_pipeline.sh is required.
+---
+
+## 5. ▶️ Run Pipeline
 
 ### Docker
 
