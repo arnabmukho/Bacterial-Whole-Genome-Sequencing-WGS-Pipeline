@@ -80,9 +80,9 @@ docker pull arnabmukho/bacterial_wgs:1.1.0-ubuntu
 ## 2. Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/bacterial_wgs_pipeline.git
+https://github.com/arnabmukho/Bacterial-Whole-Genome-Sequencing-WGS-Pipeline.git
 
-cd bacterial_wgs_pipeline
+cd Bacterial-Whole-Genome-Sequencing-WGS-Pipeline
 ```
 
 ---
